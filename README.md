@@ -47,9 +47,9 @@ $ ./node_modules/.bin/node app.js
 
 ## API
 
-- node() require a npm module.
-- node.require() require a npm module.
-- node.run() execute a Node.js js script file.
+- `node()` require a npm module.
+- `node.require()` require a npm module.
+- `node.run()` execute a Node.js js script file.
 
 ## Questions & Suggestions
 
