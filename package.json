@@ -1,0 +1,43 @@
+{
+  "name": "@fibjs/node",
+  "description": "Node.js runtime which works on fibjs platform.",
+  "version": "1.0.0",
+   "bin": {
+    "node": "bin/node.js"
+  },
+  "main": "lib/index.js",
+  "keywords": [
+    "npm",
+    "Node",
+    "polyfill",
+    "js",
+    "fibjs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fibjs-modules/node.git"
+  },
+  "scripts": {
+    "ci": "fibjs test/main.js"
+  },
+  "dependencies": {
+    "@fibjs/fs-readdir-recursive": "^1.0.2"
+  },
+  "devDependencies": {
+    "@fibjs/ci": "^1.0.0"
+  },
+  "ci": {
+    "type": "travis"
+  },
+  "bugs": {
+    "url": "https://github.com/fibjs-modules/node/issues"
+  },
+  "author": "ngot <zhuanghengfei@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/fibjs-modules/node#readme",
+  "files": [
+    "index.js",
+    "lib",
+    "bin"
+  ]
+}
