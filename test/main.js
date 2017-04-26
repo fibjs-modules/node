@@ -1,6 +1,6 @@
 const path = require('path');
 const fs = require('fs');
-const nrequire = require('../');
+const node = require('../');
 const readdirRecursive = require('@fibjs/fs-readdir-recursive');
 
 const testBasedir = path.join(__dirname, 'node');
@@ -17,7 +17,7 @@ files = files.map(f => {
 
 files.forEach(c => {
   try {
-    nrequire.run(c);
+    node.run(c);
     console.log(path.basename(c) + ' √');
   } catch (error) {
     console.log(path.basename(c) + ' :');
