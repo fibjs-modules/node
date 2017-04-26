@@ -29,7 +29,7 @@ const child_process = require('child_process');
 const stream = require('stream');
 const buffer = require('buffer');
 const util = require('util');
-const Timer = Date;// native bind changed for fibjs runtime by ngot
+const Timer = process.binding('timer_wrap').Timer;
 const execSync = require('child_process').execSync;
 
 const testRoot = process.env.NODE_TEST_DIR ?
@@ -63,7 +63,7 @@ exports.enoughTestCpu = Array.isArray(cpus) &&
                         (cpus.length > 1 || cpus[0].speed > 999);
 
 exports.rootDir = exports.isWindows ? 'c:\\' : '/';
-// exports.buildType = process.config.target_defaults.default_configuration;
+exports.buildType = process.config.target_defaults.default_configuration;
 
 function rimrafSync(p) {
   let st;
