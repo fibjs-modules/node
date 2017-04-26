@@ -1,7 +1,7 @@
 {
   "name": "@fibjs/node",
   "description": "Node.js runtime which works on fibjs platform.",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.0",
    "bin": {
     "node": "bin/node.js"
   },
