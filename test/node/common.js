@@ -1,3 +1,5 @@
+const native = require('native');
+
 // Copyright Joyent, Inc. and other Node contributors.
 //
 // Permission is hereby granted, free of charge, to any person obtaining a
@@ -29,7 +31,7 @@ const child_process = require('child_process');
 const stream = require('stream');
 const buffer = require('buffer');
 const util = require('util');
-const Timer = process.binding('timer_wrap').Timer;
+const Timer = native.require('timer_wrap').Timer;
 const execSync = require('child_process').execSync;
 
 const testRoot = process.env.NODE_TEST_DIR ?

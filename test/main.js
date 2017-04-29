@@ -1,7 +1,7 @@
+const readdirRecursive = require('@fibjs/fs-readdir-recursive');
 const path = require('path');
 const fs = require('fs');
 const node = require('../');
-const readdirRecursive = require('@fibjs/fs-readdir-recursive');
 
 const testBasedir = path.join(__dirname, 'node');
 

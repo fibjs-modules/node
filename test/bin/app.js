@@ -1,3 +1,3 @@
-const os = require('os');
+const tty = require('tty');
 
-console.log('haha:', os.networkInterfaces());
+console.log('tty:', tty);
