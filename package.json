@@ -2,7 +2,7 @@
   "name": "@fibjs/node",
   "description": "Node.js runtime which works on fibjs platform.",
   "version": "1.0.0-beta.0",
-   "bin": {
+  "bin": {
     "node": "bin/node.js"
   },
   "main": "lib/index.js",
@@ -24,7 +24,9 @@
     "@fibjs/fs-readdir-recursive": "^1.0.2"
   },
   "devDependencies": {
-    "@fibjs/ci": "^1.0.0"
+    "@fibjs/ci": "^1.0.0",
+    "@fibjs/mkdirp": "^1.0.0",
+    "@fibjs/rmdirr": "^1.0.1"
   },
   "ci": {
     "type": "travis"
