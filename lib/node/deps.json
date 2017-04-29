@@ -1,0 +1,494 @@
+{
+  "_http_agent": [
+    "net",
+    "util",
+    "events"
+  ],
+  "_http_client": [
+    "util",
+    "net",
+    "url",
+    "assert",
+    "_http_common",
+    "_http_outgoing",
+    "_http_agent",
+    "buffer",
+    "internal/url",
+    "internal/http"
+  ],
+  "_http_common": [
+    "internal/freelist",
+    "internal/http",
+    "_http_incoming",
+    "util"
+  ],
+  "_http_incoming": [
+    "util",
+    "stream"
+  ],
+  "_http_outgoing": [
+    "assert",
+    "stream",
+    "timers",
+    "util",
+    "internal/util",
+    "buffer",
+    "_http_common",
+    "internal/http"
+  ],
+  "_http_server": [
+    "util",
+    "net",
+    "assert",
+    "_http_common",
+    "_http_outgoing",
+    "internal/http",
+    "events"
+  ],
+  "_stream_duplex": [
+    "util",
+    "_stream_readable",
+    "_stream_writable"
+  ],
+  "_stream_passthrough": [
+    "_stream_transform",
+    "util"
+  ],
+  "_stream_readable": [
+    "events",
+    "stream",
+    "buffer",
+    "util",
+    "internal/streams/BufferList",
+    "string_decoder",
+    "string_decoder"
+  ],
+  "_stream_transform": [
+    "_stream_duplex",
+    "util"
+  ],
+  "_stream_wrap": [
+    "assert",
+    "util",
+    "net",
+    "buffer",
+    "_stream_wrap"
+  ],
+  "_stream_writable": [
+    "util",
+    "internal/util",
+    "stream",
+    "buffer"
+  ],
+  "_tls_common": [
+    "tls",
+    "crypto"
+  ],
+  "_tls_legacy": [
+    "internal/util",
+    "assert",
+    "buffer",
+    "_tls_common",
+    "events",
+    "internal/util",
+    "stream",
+    "tls",
+    "util"
+  ],
+  "_tls_wrap": [
+    "internal/util",
+    "assert",
+    "crypto",
+    "net",
+    "tls",
+    "util",
+    "_tls_common",
+    "_stream_wrap",
+    "buffer",
+    "stream"
+  ],
+  "assert": [
+    "util",
+    "internal/util",
+    "buffer"
+  ],
+  "buffer": [
+    "internal/util",
+    "internal/buffer"
+  ],
+  "child_process": [
+    "util",
+    "internal/util",
+    "buffer",
+    "internal/child_process"
+  ],
+  "cluster": [
+    "internal/cluster/child",
+    "internal/cluster/master"
+  ],
+  "console": [
+    "util",
+    "assert"
+  ],
+  "constants": [],
+  "crypto": [
+    "internal/util",
+    "buffer",
+    "buffer",
+    "stream",
+    "util",
+    "internal/streams/lazy_transform",
+    "assert",
+    "string_decoder",
+    "tls",
+    "tls"
+  ],
+  "dgram": [
+    "assert",
+    "buffer",
+    "util",
+    "events",
+    "dns",
+    "cluster"
+  ],
+  "dns": [
+    "util",
+    "internal/net"
+  ],
+  "domain": [
+    "util",
+    "events"
+  ],
+  "events": [
+    "domain"
+  ],
+  "fs": [
+    "util",
+    "path",
+    "buffer",
+    "stream",
+    "events",
+    "internal/fs",
+    "internal/url",
+    "internal/util",
+    "buffer"
+  ],
+  "http": [
+    "_http_agent",
+    "_http_client",
+    "_http_common",
+    "_http_incoming",
+    "_http_outgoing",
+    "_http_server"
+  ],
+  "https": [
+    "internal/util",
+    "tls",
+    "url",
+    "http",
+    "util",
+    "internal/url"
+  ],
+  "internal/bootstrap_node": [
+    "events",
+    "internal/process",
+    "internal/process/warning",
+    "internal/process/next_tick",
+    "internal/process/stdio",
+    "internal/process/write-coverage",
+    "internal/url",
+    "_third_party_main",
+    "node-inspect/lib/_inspect",
+    "internal/inspector/remote_debugging_server",
+    "_debug_agent",
+    "internal/v8_prof_processor",
+    "cluster",
+    "internal/module",
+    "path",
+    "module",
+    "fs",
+    "tty",
+    "internal/repl",
+    "util",
+    "buffer",
+    "timers",
+    "console",
+    "timers",
+    "module",
+    "path",
+    "vm",
+    "module",
+    "module",
+    "vm",
+    "internal/module"
+  ],
+  "internal/buffer": [
+    "internal/util",
+    "buffer"
+  ],
+  "internal/child_process": [
+    "internal/errors",
+    "string_decoder",
+    "events",
+    "net",
+    "dgram",
+    "util",
+    "assert",
+    "internal/socket_list",
+    "internal/util"
+  ],
+  "internal/cluster/child": [
+    "assert",
+    "util",
+    "events",
+    "internal/cluster/worker",
+    "internal/cluster/utils"
+  ],
+  "internal/cluster/master": [
+    "assert",
+    "child_process",
+    "util",
+    "events",
+    "internal/cluster/round_robin_handle",
+    "internal/cluster/shared_handle",
+    "internal/cluster/worker",
+    "internal/cluster/utils"
+  ],
+  "internal/cluster/round_robin_handle": [
+    "assert",
+    "net",
+    "internal/cluster/utils"
+  ],
+  "internal/cluster/shared_handle": [
+    "assert",
+    "dgram",
+    "net"
+  ],
+  "internal/cluster/utils": [
+    "util"
+  ],
+  "internal/cluster/worker": [
+    "events",
+    "internal/util",
+    "util"
+  ],
+  "internal/errors": [
+    "util",
+    "assert"
+  ],
+  "internal/freelist": [],
+  "internal/fs": [
+    "buffer",
+    "stream",
+    "fs",
+    "util"
+  ],
+  "internal/http": [],
+  "internal/linkedlist": [],
+  "internal/module": [],
+  "internal/net": [],
+  "internal/process/next_tick": [
+    "internal/process/promises",
+    "internal/errors"
+  ],
+  "internal/process/promises": [
+    "assert"
+  ],
+  "internal/process/stdio": [
+    "internal/errors",
+    "tty",
+    "fs",
+    "net",
+    "tty",
+    "internal/fs",
+    "net"
+  ],
+  "internal/process/warning": [
+    "internal/errors",
+    "fs"
+  ],
+  "internal/process/write-coverage": [
+    "process",
+    "path",
+    "fs"
+  ],
+  "internal/process": [
+    "internal/util",
+    "util",
+    "util",
+    "child_process",
+    "util"
+  ],
+  "internal/querystring": [],
+  "internal/readline": [],
+  "internal/repl": [
+    "readline",
+    "repl",
+    "path",
+    "fs",
+    "os",
+    "util"
+  ],
+  "internal/socket_list": [
+    "events"
+  ],
+  "internal/streams/BufferList": [
+    "buffer"
+  ],
+  "internal/streams/lazy_transform": [
+    "stream",
+    "util",
+    "crypto"
+  ],
+  "internal/streams/legacy": [
+    "events",
+    "util"
+  ],
+  "internal/test/unicode": [],
+  "internal/url": [
+    "util",
+    "internal/querystring",
+    "internal/util",
+    "internal/errors",
+    "querystring"
+  ],
+  "internal/util": [
+    "internal/errors"
+  ],
+  "internal/v8_prof_polyfill": [
+    "fs",
+    "child_process",
+    "string_decoder"
+  ],
+  "internal/v8_prof_processor": [],
+  "module": [
+    "native_module",
+    "util",
+    "internal/module",
+    "vm",
+    "assert",
+    "fs",
+    "internal/fs",
+    "path",
+    "a.<ext>",
+    "a",
+    ".",
+    "./path/to/foo",
+    "./path",
+    "path"
+  ],
+  "net": [
+    "events",
+    "stream",
+    "timers",
+    "util",
+    "internal/util",
+    "internal/net",
+    "assert",
+    "buffer",
+    "dns",
+    "cluster"
+  ],
+  "os": [
+    "internal/util"
+  ],
+  "path": [
+    "util"
+  ],
+  "process": [],
+  "punycode": [],
+  "querystring": [
+    "buffer",
+    "internal/querystring"
+  ],
+  "readline": [
+    "util",
+    "buffer",
+    "events",
+    "internal/readline",
+    "string_decoder",
+    "string_decoder"
+  ],
+  "repl": [
+    "repl",
+    "internal/module",
+    "internal/util",
+    "util",
+    "stream",
+    "vm",
+    "path",
+    "fs",
+    "readline",
+    "console",
+    "module",
+    "domain",
+    "module",
+    "...<Tab>",
+    "module"
+  ],
+  "stream": [
+    "internal/streams/legacy",
+    "_stream_readable",
+    "_stream_writable",
+    "_stream_duplex",
+    "_stream_transform",
+    "_stream_passthrough"
+  ],
+  "string_decoder": [
+    "buffer",
+    "internal/util"
+  ],
+  "sys": [
+    "util"
+  ],
+  "timers": [
+    "internal/linkedlist",
+    "assert",
+    "util"
+  ],
+  "tls": [
+    "internal/util",
+    "net",
+    "url",
+    "buffer",
+    "_tls_common",
+    "_tls_common",
+    "_tls_wrap",
+    "_tls_wrap",
+    "_tls_wrap",
+    "_tls_wrap",
+    "_tls_legacy"
+  ],
+  "tty": [
+    "util",
+    "net",
+    "readline",
+    "readline",
+    "readline",
+    "readline"
+  ],
+  "url": [
+    "punycode",
+    "internal/querystring",
+    "internal/url",
+    "querystring"
+  ],
+  "util": [
+    "buffer",
+    "internal/util",
+    "vm"
+  ],
+  "v8": [
+    "buffer",
+    "internal/util",
+    "internal/buffer"
+  ],
+  "vm": [],
+  "zlib": [
+    "buffer",
+    "internal/util",
+    "_stream_transform",
+    "assert",
+    "buffer"
+  ]
+}
