@@ -59,7 +59,7 @@ function save(tpPath, content) {
 
 const modulesFilePath = path.join(path.dirname(nodeLibsDir), 'modules.json');
 const depsFilePath = path.join(path.dirname(nodeLibsDir), 'deps.json');
-fs.writeFile(modulesFilePath, JSON.stringify(nativeLibs));
-fs.writeFile(depsFilePath, JSON.stringify(deps));
+fs.writeFile(modulesFilePath, JSON.stringify(nativeLibs, null, 2));
+fs.writeFile(depsFilePath, JSON.stringify(deps, null, 2));
 
 console.log('generate done!');
