@@ -104,8 +104,7 @@ for (const a of similar) {
     if (a !== b) {
       assert.doesNotThrow(() => assert.deepEqual(a, b));
       assert.throws(() => assert.deepStrictEqual(a, b),
-                    // re`${a} deepStrictEqual ${b}`); // to be fixed
-                    );
+                    re`${a} deepStrictEqual ${b}`);
     }
   }
 }
