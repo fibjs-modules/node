@@ -20,7 +20,7 @@
 [download-image]: https://img.shields.io/npm/dm/@fibjs/node.svg?style=flat-square
 [download-url]: https://npmjs.org/package/@fibjs/node
 
-Node.js runtime which works on fibjs platform. you should use this module only when you want use some Node.js's module, please use fibjs native module first!
+Node.js runtime which works on fibjs platform. You should use this module only when you want to use some Node.js's module; please use fibjs native module first!
 
 ## Install
 
