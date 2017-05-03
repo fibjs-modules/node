@@ -1,5 +1,6 @@
 const readdirRecursive = require('@fibjs/fs-readdir-recursive');
 const path = require('path');
+const co = require('coroutine');
 const fs = require('fs');
 const node = require('../');
 
@@ -17,20 +18,22 @@ files = files.map(f => {
 
 const nodeBin = path.join(__dirname, '../bin/node.js');
 
-files.forEach(c => {
-    var p = process.open(nodeBin, [c]);
-    var r, e='';
-    while (r = p.readLine()) {
-      if (/\d{0,20}Error:\s.*/.test(r) || !!e) {
-        e += '\n' + r;
-      } else {
-        console.log(r);
-      }
-    }
-    if (e) {
-      console.log(e);
-      process.exit(1);
+co.parallel(files, runTest, 20);
+
+function runTest(testCase) {
+  var p = process.open(nodeBin, [testCase]);
+  var r, e = '';
+  while (r = p.readLine()) {
+    if (/\d{0,20}Error:\s.*/.test(r) || !!e) {
+      e += '\n' + r;
     } else {
-      console.log(path.basename(c) + ' √');
+      console.log(r);
     }
-});
+  }
+  if (e) {
+    console.log(e);
+    process.exit(1);
+  } else {
+    console.log(path.basename(testCase) + ' √');
+  }
+}
