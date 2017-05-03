@@ -16,6 +16,9 @@ files = files.map(f => {
 });
 
 files.forEach(c => {
+  // if(c.indexOf('test-buffer-write-noassert') == -1) return ;
+  // if(c.indexOf('test-assert-fail') == -1) return ;
+  
   try {
     node.run(c);
     console.log(path.basename(c) + ' √');
