@@ -15,15 +15,22 @@ files = files.map(f => {
   return path.join(testBasedir, f);
 });
 
+const nodeBin = path.join(__dirname, '../bin/node.js');
+
 files.forEach(c => {
-  // if(c.indexOf('test-buffer-write-noassert') == -1) return ;
-  // if(c.indexOf('test-assert-fail') == -1) return ;
-  
-  try {
-    node.run(c);
-    console.log(path.basename(c) + ' √');
-  } catch (error) {
-    console.log(path.basename(c) + ' :');
-    throw error;
-  }
+    var p = process.open(nodeBin, [c]);
+    var r, e='';
+    while (r = p.readLine()) {
+      if (/\d{0,20}Error:\s.*/.test(r) || !!e) {
+        e += '\n' + r;
+      } else {
+        console.log(r);
+      }
+    }
+    if (e) {
+      console.log(e);
+      process.exit(1);
+    } else {
+      console.log(path.basename(c) + ' √');
+    }
 });
