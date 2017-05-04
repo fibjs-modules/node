@@ -85,8 +85,8 @@ for (let i = 0, s = buf; i < buf.length; ++i) {
   assert.strictEqual(0, Buffer.compare(buf.slice(0, -i), s.slice(0, -i)));
 }
 
-// const utf16Buf = Buffer.from('0123456789', 'utf16le'); // to be fixed!
-// assert.deepStrictEqual(utf16Buf.slice(0, 6), Buffer.from('012', 'utf16le'));
+const utf16Buf = Buffer.from('0123456789', 'utf16le');
+assert.deepStrictEqual(utf16Buf.slice(0, 6), Buffer.from('012', 'utf16le'));
 
 assert.strictEqual(0, Buffer.compare(buf.slice('0', '1'),
                                      Buffer.from('0', 'utf8')));
