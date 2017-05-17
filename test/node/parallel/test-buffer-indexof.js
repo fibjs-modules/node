@@ -397,10 +397,10 @@ assert.strictEqual(
 
 // Test lastIndexOf basic functionality; Buffer b contains 'abcdef'.
 // lastIndexOf string:
-// assert.strictEqual(b.lastIndexOf('a'), 0);
-// assert.strictEqual(b.lastIndexOf('a', 1), 0);
-// assert.strictEqual(b.lastIndexOf('b', 1), 1);
-// assert.strictEqual(b.lastIndexOf('c', 1), -1);
+assert.strictEqual(b.lastIndexOf('a'), 0);
+assert.strictEqual(b.lastIndexOf('a', 1), 0);
+assert.strictEqual(b.lastIndexOf('b', 1), 1);
+assert.strictEqual(b.lastIndexOf('c', 1), -1);
 // assert.strictEqual(b.lastIndexOf('a', -1), 0);
 // assert.strictEqual(b.lastIndexOf('a', -4), 0);
 // assert.strictEqual(b.lastIndexOf('a', -b.length), 0);
