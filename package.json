@@ -29,7 +29,7 @@
     "@fibjs/rmdirr": "^1.0.1"
   },
   "ci": {
-    "type": "travis"
+    "version": "0.3.0"
   },
   "bugs": {
     "url": "https://github.com/fibjs-modules/node/issues"
