@@ -24,12 +24,13 @@
     "@fibjs/fs-readdir-recursive": "^1.0.2"
   },
   "devDependencies": {
-    "@fibjs/ci": "^1.0.0",
+    "@fibjs/ci": "^2.0.0",
+    "@fibjs/copy": "^1.0.1",
     "@fibjs/mkdirp": "^1.0.0",
     "@fibjs/rmdirr": "^1.0.1"
   },
   "ci": {
-    "version": "0.3.0"
+    "version": "0.3.1, 0.4.1"
   },
   "bugs": {
     "url": "https://github.com/fibjs-modules/node/issues"
