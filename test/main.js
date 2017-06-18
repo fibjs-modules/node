@@ -21,7 +21,7 @@ const nodeBin = path.join(__dirname, '../bin/node.js');
 co.parallel(files, runTest, 20);
 
 function runTest(testCase) {
-  // if(testCase.indexOf('test-buffer-write-noassert') === -1) return;
+  // if(testCase.indexOf('test-buffer-includes') === -1) return;
   var p = process.open(nodeBin, [testCase]);
   var r, e = '';
   while (r = p.readLine()) {
